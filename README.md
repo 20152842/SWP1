@@ -1,2 +1,2 @@
-20152842	 YNG2:
+2015***2		 YNG2:
 Kookmin Univ.SW(CS)
