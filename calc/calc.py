@@ -1,6 +1,7 @@
 from cgi import parse_qs
 from template import html
 
+
 def application(envrion, start_response):
 	d = parse_qs(environ['QUERY_STRING'])
 	first_num = d.get('first_num', [''])[0]
