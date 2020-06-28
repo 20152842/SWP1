@@ -9,7 +9,8 @@ def application(environ, start_response):
 	
 	if sum == 0 and mul == 0:
 		sum = -1
-		mul = -1	
+		mul = -1
+	
 	elif first_num.isdigit() and second_num.isdigit():	
 		first_num, second_num = int(first_num), int(second_num)
 		sum = first_num + second_num
