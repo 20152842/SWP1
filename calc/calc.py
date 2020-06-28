@@ -10,11 +10,14 @@ def application(environ, start_response):
 	if sum == 0 and mul == 0:
 		sum = -1
 		mul = -1
-	
-	elif first_num.isdigit() and second_num.isdigit():	
+	try:	
 		first_num, second_num = int(first_num), int(second_num)
 		sum = first_num + second_num
 		mul = first_num * second_num
+	except ValueError:
+		sum = -1
+		mul = -1
+
 	response_body = html % {'sum':sum, 'mul':mul}
 	start_response('200 OK', [
 		('Content-Type', 'text/html'),
